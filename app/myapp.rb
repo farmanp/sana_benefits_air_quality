@@ -11,7 +11,7 @@ get '/city_profile' do
 	@city = params[:city]
 	response = AirQualityIndexHelper.get_request(@city)
 	@aqi_score = response["data"]["aqi"] 
-	@aqi_score_check = AirQualityIndexHelper.aqi_check(@aqi_score)
+	@aqi_score_check = AirQualityIndexHelper.aqi_score_check(@aqi_score)
 
 	erb :city_profile
 end 
