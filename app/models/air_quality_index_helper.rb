@@ -2,7 +2,7 @@ require 'net/http'
 require 'faraday'
 require 'json'
 
-module AirQualityAPI
+module AirQualityIndexHelper
 	GOOD_AQI = 'Good'
 	BAD_AQI = 'Bad'
 	BASE_URI = 'https://api.waqi.info/feed'
@@ -28,7 +28,7 @@ module AirQualityAPI
 		aqi_score.between?(0, 50) 
 	end 
 
-	def self.aqi_check(aqi_score)
+	def self.aqi_score_check(aqi_score)
 		is_good_aqi?(aqi_score) ? GOOD_AQI : BAD_AQI
 	end 
 
