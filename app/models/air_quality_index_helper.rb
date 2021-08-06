@@ -2,7 +2,7 @@ require 'net/http'
 require 'faraday'
 require 'json'
 
-module AirQualityAPI
+module AirQualityIndexHelper
 	GOOD_AQI = 'Good'
 	BAD_AQI = 'Bad'
 	BASE_URI = 'https://api.waqi.info/feed'
