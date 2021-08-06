@@ -5,6 +5,7 @@ gem "sinatra", :require => ["sinatra/base"]
 gem "sinatra-contrib"
 gem "activerecord", :require => ["active_record"]
 gem "faraday"
+gem "dotenv"
 
 platforms :ruby_18, :jruby do
   gem "require_relative"

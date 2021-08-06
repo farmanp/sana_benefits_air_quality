@@ -19,6 +19,7 @@ GEM
     concurrent-ruby (1.1.9)
     daemons (1.4.0)
     diff-lcs (1.4.4)
+    dotenv (2.7.6)
     eventmachine (1.2.7)
     faraday (1.6.0)
       faraday-em_http (~> 1.0)
@@ -124,6 +125,7 @@ DEPENDENCIES
   activerecord-jdbcpostgresql-adapter
   activerecord-jdbcsqlite3-adapter
   byebug
+  dotenv
   faraday
   mysql2
   pg
