@@ -12,7 +12,6 @@ platforms :ruby_18, :jruby do
   gem "rack", "1.4.1"
 end
 
-
 group :production do
   gem "mysql2", :platforms => :ruby
   gem "pg", :platforms => :ruby
@@ -29,7 +28,6 @@ end
 group :test do
   gem "rspec"
 end
-
 
 group :development do
   gem "pry"
