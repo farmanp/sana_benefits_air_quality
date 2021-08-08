@@ -2,19 +2,20 @@
 
 <h2>Air Quality</h2>
 
-<p><%= @aqi_score %></p>
 
-<% if @aqi_score_check.eql?("Good") %>
-	<p style="color: green">
-		<%= @aqi_score_check %>
-	</p>
+<div class="aqiProfile">
+	<div class="slidecontainer">
+		<input type="range" disable=true min="0" max=<%= @aqi_score + 100 unless @aqi_score > 600 %> value=<%= @aqi_score %> class="slider" id="myRange">
+	</div>
 
-<% else %>
-	<p style="color: red">
-		<%= @aqi_score_check %>
-	</p>
+	<div class="scoreStats">
+		<p><%= @aqi_score %></p>
 
-<% end %> 
+		<div id="scoreCheck">
+			<p><%= @aqi_score_check %>
+		<div>
+	</div>
+</div>
 
 
 <a href="/">Return to Home</a>
