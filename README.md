@@ -49,9 +49,9 @@ I refrained from going too far down the rabbit hole in this project. The goal wa
 
 If I had more time and capacity to do so, the next steps in my project would be to:
 
-- [] Enhance UI to have react experience
-- [] Refactor API to structure AQI as a module and create API wrapper as a class
-- [] Enhance functionality to consider more edge cases
-- [] Add more spec tests and break down code to split by inheritance and composition
-- [] Create user registration/sessions with username/password
-- [] Add more validations for backend and frontend so a user cannot "break" the calls
+- [ ] Enhance UI to have react experience
+- [ ] Refactor API to structure AQI as a module and create API wrapper as a class
+- [ ] Enhance functionality to consider more edge cases
+- [ ] Add more spec tests and break down code to split by inheritance and composition
+- [ ] Create user registration/sessions with username/password
+- [ ] Add more validations for backend and frontend so a user cannot "break" the calls
